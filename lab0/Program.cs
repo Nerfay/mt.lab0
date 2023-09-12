@@ -14,14 +14,16 @@ namespace lab0
         /// <param name="first"> Первое целое число</param>
         /// <param name="second">Второе целое число</param>
         /// <returns> Сумма двух целых чисел</returns>
-        private static int SumofTwoIntegers (int first,int second) {
-            return  first + second;
+        private static int SumofTwoIntegers(int first, int second)
+        {
+            return first + second;
         }
         static void Main(string[] args)
         {
             Random rnd = new Random();
-            int first = rnd.Next(100);
-            int second = rnd.Next(100);
+            int first = rnd.Next(-100, 100);
+            int second = rnd.Next(-100, 100);
+            Console.WriteLine("Варіант 1 : Реализовать функцию вычисления суммы двух целых чисел ");
             Console.WriteLine($" \n Первое число:{first} ; Второе число:{second} ; \n \n Cумма целых чисел: {SumofTwoIntegers(first, second)}");
             Console.ReadLine();
         }
